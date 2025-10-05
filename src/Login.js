@@ -8,7 +8,7 @@ export default function Login({ onSuccess }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch("https://gallery-cv1p.onrender.com/api/unlock/", {
+      const res = await fetch("http://127.0.0.1:8000/api/unlock/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         credentials: "include",
