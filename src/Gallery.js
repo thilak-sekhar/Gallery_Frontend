@@ -13,7 +13,7 @@ export default function Gallery() {
   // Load images from API (supports pagination)
   const loadImages = async (cursor = null, append = false) => {
     try {
-      let url = "http://127.0.0.1:8000/api/media/";
+      let url = "https://gallery-backend-8z2u.onrender.com/api/media/";
       if (cursor) url += `?cursor=${cursor}`;
 
       const res = await fetch(url, { credentials: "include" });
@@ -46,7 +46,7 @@ export default function Gallery() {
 
     setLoading(true);
     try {
-      const res = await fetch("http://127.0.0.1:8000/api/upload/", {
+      const res = await fetch("https://gallery-backend-8z2u.onrender.com/api/upload/", {
         method: "POST",
         body: form,
         credentials: "include"
