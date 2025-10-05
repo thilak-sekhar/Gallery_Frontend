@@ -66,7 +66,7 @@ export default function Gallery() {
 
   return (
     <div className="gallery-container">
-      <h1>My Private Gallery</h1>
+      <h1>My Gallery</h1>
       {loading && <div className="uploading-text">Uploading...</div>}
 
       {/* Image Grid */}
